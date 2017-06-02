@@ -7,6 +7,7 @@
 <link href="./mini_files/css" rel="stylesheet" type="text/css">
 <meta name="description" content="Good Inc.">
     <script type="text/javascript" src="good.js"></script>
+    <script type="text/javascript" src="./mini_files/numbers.js"></script>
 
 </head>
 
@@ -49,6 +50,14 @@
     </div>
     <div id="Sum">
         <!-- Sum Form goes Here -->
+        <form name = "numbers" onsubmit="alert( 'The sum is: ' + document.getElementById('answer').innerText );">
+            <input type="number" id="a" name="a" value="50" onchange="updateResult()"><br>
+            <input type="number" id="b" name="b" value="50" onchange="updateResult()"><br>
+            <input type="number" id="c" name="c" value="50" onchange="updateResult()"><br>
+            <input type="number" id="d" name="d" value="50" onchange="updateResult()"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p> The result is: <em id="answer"> 200 </em> </p>
     </div>
     <div id="String">
         <!-- String Form goes Here -->
