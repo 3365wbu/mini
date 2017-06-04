@@ -4,6 +4,6 @@
 // Function that reverses String
 
 function stringReversal(){
-    var userInput = document.getElementById('a').value;
-    document.getElementById('a').value= alert(userInput.split('').reverse('').join(''));
+    var userInput = document.getElementById('r').value;
+    document.getElementById('r').value= alert(userInput.split('').reverse('').join(''));
 }
