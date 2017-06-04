@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <script>
+    function stringReversal(){
+    var userInput = document.getElementById('a').value;
+    document.getElementById('a').value= alert(userInput.split('').reverse('').join(''));
+    }
+    </script>
 </head>
 <body>
 <p id="String"></p>
 <form name = reverse>
     <input type="text" id="a">
-    <input type="button" value="Reverse" onclick="stringReversal()">
+    <button value="Reverse" onclick="stringReversal()">Reverse</button>
 </form>
 </body>
 </html>
